@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANIvrntsv | Debugging the Self: A Stand-up Sutra</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inconsolata&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg-light: radial-gradient(circle at top right, #faf8f2, #e7e3d9);
+      --bg-dark: radial-gradient(circle at top right, #1a1a1a, #2d2d2d);
+      --text-light: #1a1a1a;
+      --text-dark: #f1f1f1;
+      --highlight: #f5f2ec;
+      --quote-bg: #fff7df;
+      --note-bg: #e0f5e0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      line-height: 1.7;
+      padding: 6vw;
+      transition: background 1s ease, color 0.8s ease;
+    }
+
+    body.dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-top: 0.5rem;
+      color: #666;
+    }
+
+    section {
+      max-width: 880px;
+      margin: 0 auto 4rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      background: var(--quote-bg);
+      border-left: 6px solid #d4b14c;
+      margin: 2.5rem 0;
+      padding: 1.5rem 2rem;
+      font-size: 1.3rem;
+    }
+
+    .quote {
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: center;
+      background: var(--highlight);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2.5rem 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .debug-note {
+      background: var(--note-bg);
+      border-left: 5px solid #6ba96b;
+      padding: 1rem 1.5rem;
+      font-family: 'Inconsolata', monospace;
+      margin: 2rem 0;
+      font-size: 1.05rem;
+    }
+
+    .finale {
+      background: #eeeeee44;
+      border-left: 4px solid #aaa;
+      padding: 2rem;
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 6rem;
+    }
+
+    .controls {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-family: 'Inconsolata', monospace;
+      background: #ccc;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #999;
+    }
+
+    .typewriter {
+      display: block;
+      border-right: 2px solid;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 1.25rem;
+      width: 0;
+      animation: typing 4s steps(60, end) forwards, blink 0.8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: black; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <button onclick="document.body.classList.toggle('dark-mode')">
+      Toggle Dark Mode
+    </button>
+    <button onclick="startTypewriter()">
+      Start Live Typing
+    </button>
+  </div>
+
+  <header>
+    <h1>VANIvrntsv</h1>
+    <h2>Live in Nha Trang: A Stand-up Sutra for the Debugging Soul</h2>
+  </header>
+
+  <section id="live-section">
+    <blockquote class="typewriter">
+      “I went to India for enlightenment. I came back with spice trauma and tuk-tuk PTSD.”
+    </blockquote>
+  </section>
+
+  <section>
+
+    <div class="quote">
+      “The algorithm knows more about me than my therapist — but at least my therapist doesn’t try to sell me herbal lube.”
+    </div>
+
+    <div class="debug-note">
+      // Privacy Checkpoint:<br>
+      Cookies accepted. Vulnerabilities exposed. Emotional settings: public.
+    </div>
+
+    <blockquote>
+      “I tried loving myself. But then I remembered my own browser history.”
+    </blockquote>
+
+    <div class="quote">
+      “Enlightenment isn’t a place — it’s the moment you stop refreshing your notifications looking for love.”
+    </div>
+
+    <div class="debug-note">
+      // Digital Karma Scan:<br>
+      482 likes. 1 real connection. Wisdom: updating.
+    </div>
+
+    <div class="finale">
+      “Maybe you’re not behind. Maybe you’re just in a long, weird buffering phase. And the moment it loads — it’s you.”
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025–2060 VANIvrntsv. Streamed from within. Laughed into being. Never cached.
+  </footer>
+
+  <script>
+    function startTypewriter() {
+      const el = document.querySelector('.typewriter');
+      el.style.animation = 'typing 5s steps(100, end) forwards, blink 0.8s step-end infinite';
+    }
+  </script>
+</body>
+</html>
